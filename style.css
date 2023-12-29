@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.ball-text {
+    position: fixed;
+    z-index: 2;
+    color: white;
+    font-size: 5rem;
+    right: 20%;
+    bottom: 40%;
+    transform: translate(-20%, -40%);
+}
+
+section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+
+  main {
+    width: 100vw;
+    color: white;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    padding: 120px 0px;
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
